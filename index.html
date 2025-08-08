@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Golden Spoon</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+  <style>
+    .font-pacifico {
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-r from-yellow-50 to-pink-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-yellow-600 font-pacifico">The Golden Spoon</div>
+      <nav class="hidden md:flex space-x-8 font-semibold">
+        <a href="#home" class="text-gray-600 hover:text-yellow-600 transition">Home</a>
+        <a href="#menu" class="text-gray-600 hover:text-yellow-600 transition">Menu</a>
+        <a href="#about" class="text-gray-600 hover:text-yellow-600 transition">About</a>
+        <a href="#services" class="text-gray-600 hover:text-yellow-600 transition">Services</a>
+        <a href="#gallery" class="text-gray-600 hover:text-yellow-600 transition">Gallery</a>
+        <a href="#contact" class="text-gray-600 hover:text-yellow-600 transition">Contact</a>
+        <a href="#reservation" class="text-gray-600 hover:text-yellow-600 transition">Reservation</a>
+        <a href="#location" class="text-gray-600 hover:text-yellow-600 transition">Location</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold">
+      <a href="#home" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">Home</a>
+      <a href="#menu" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">Menu</a>
+      <a href="#about" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">About</a>
+      <a href="#services" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">Services</a>
+      <a href="#gallery" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">Gallery</a>
+      <a href="#contact" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">Contact</a>
+      <a href="#reservation" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">Reservation</a>
+      <a href="#location" class="block py-2 px-6 text-gray-600 hover:bg-yellow-100">Location</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-yellow-100 to-pink-100 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-5xl font-bold mb-6">The Taste of Luxury</h1>
+        <p class="text-xl mb-8">Fine dining meets fast delivery at your desk!</p>
+        <a href="#menu" class="bg-yellow-600 text-white px-6 py-3 rounded-full text-lg hover:bg-yellow-700 transition">Explore Menu</a>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="py-14 bg-white">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-extrabold">Our Menu</h2>
+        <p class="text-gray-600 mt-2">Handcrafted dishes with golden taste!</p>
+      </div>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <div class="bg-yellow-100 rounded-lg shadow p-6 text-center">
+          <h3 class="text-2xl font-bold mb-2">Starters</h3>
+          <p class="text-gray-600">Juicy beef patty with fresh lettuce and tomato on a toasted bun.</p>
+          <p class="mt-2 text-yellow-700 font-semibold">₹180</p>
+        </div>
+        <div class="bg-yellow-100 rounded-lg shadow p-6 text-center">
+          <h3 class="text-2xl font-bold mb-2">Cold Coffee</h3>
+          <p class="text-gray-600">Freshly brewed coffee to keep your brain wired.</p>
+          <p class="mt-2 text-yellow-700 font-semibold">₹80</p>
+        </div>
+        <div class="bg-yellow-100 rounded-lg shadow p-6 text-center">
+          <h3 class="text-2xl font-bold mb-2">Special Chicken Dosa</h3>
+          <p class="text-gray-600">Crispy dosa filled with spiced chicken and chutney.</p>
+          <p class="mt-2 text-yellow-700 font-semibold">₹120</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-14 bg-pink-50">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-4xl font-extrabold mb-4">About The Golden Spoon</h2>
+        <p class="text-gray-600">We’re the go-to gourmet stop for students and professionals alike — delivering golden flavors with every bite.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-14 bg-white">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-extrabold">Our Services</h2>
+      </div>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 class="text-xl font-bold mb-2">Fast Delivery</h3>
+          <p class="text-gray-600">Get your meal within 30 minutes or it's on us!</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 class="text-xl font-bold mb-2">Affordable Prices</h3>
+          <p class="text-gray-600">Golden meals that won’t empty your wallet.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 class="text-xl font-bold mb-2">Chef’s Daily Special</h3>
+          <p class="text-gray-600">Experience something new and exclusive every day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-14 bg-yellow-50">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-extrabold">Gallery of Goodness</h2>
+        <p class="text-gray-600 mt-2">Savor the visuals before the flavor hits you!</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+        <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://source.unsplash.com/featured/?burger" alt="Burger" class="w-full h-64 object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://source.unsplash.com/featured/?sushi" alt="Sushi" class="w-full h-64 object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://source.unsplash.com/featured/?pasta" alt="Pasta" class="w-full h-64 object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://source.unsplash.com/featured/?pizza" alt="Pizza" class="w-full h-64 object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://source.unsplash.com/featured/?indianfood" alt="Indian Food" class="w-full h-64 object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://source.unsplash.com/featured/?dessert" alt="Dessert" class="w-full h-64 object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-14 bg-white">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-extrabold">Contact Us</h2>
+      </div>
+      <div class="max-w-xl mx-auto px-4 text-center">
+        <p class="text-gray-600 mb-4">Questions or cravings? Drop us a line!</p>
+        <p class="text-gray-600">Email: <a href="mailto:goldenspoon@bytexl.in" class="text-yellow-600">goldenspoon@bytexl.in</a></p>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="py-14 bg-pink-50">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-extrabold">Make a Reservation</h2>
+      </div>
+      <div class="max-w-lg mx-auto px-4">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" type="text" placeholder="Your Name">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" type="email" placeholder="you@example.com">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Date & Time</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" type="datetime-local">
+          </div>
+          <div class="flex items-center justify-center">
+            <button class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded" type="submit">
+              Reserve Now
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="py-14 bg-white">
+      <div class="text-center mb-8">
+        <h2 class="text-4xl font-extrabold">Find Us in Poranki, Vijayawada - 521134</h2>
+      </div>
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="rounded-xl overflow-hidden shadow-2xl">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.485586866758!2d80.62046581486908!3d16.51586818876839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f2df865d1c0b%3A0x428416c395a2531a!2sPoranki%2C%20Vijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1691407770203!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-600 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 The Golden Spoon. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
